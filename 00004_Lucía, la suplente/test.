@@ -1,0 +1,19 @@
+test "Trabajando para Mariela, Lucía le cobra 180 a Ludmila por 10km" {
+  lucia.estaReemplazandoA(mariela)
+  assert.equals(180, lucia.precioViaje(ludmila, 10))
+}
+
+test "Trabajando para Juana, Lucía le cobra 200 a Ludmila por 10km" {
+  lucia.estaReemplazandoA(juana)
+  assert.equals(200, lucia.precioViaje(ludmila, 10))
+}
+
+test "Trabajando para Roxana, Lucía le cobra 220 a Teresa por 10km" {
+  lucia.estaReemplazandoA(roxana)
+  assert.equals(220, lucia.precioViaje(teresa, 10))
+}
+
+test "Trabajando para Gabriela, Lucía le cobra 72 a Ana María por 2km" {
+  lucia.estaReemplazandoA(gabriela)
+  assert.equals(72, lucia.precioViaje(anaMaria, 2))
+}

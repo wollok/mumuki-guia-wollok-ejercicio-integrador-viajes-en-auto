@@ -1,0 +1,39 @@
+describe "La oficina" {
+  test "puede asignar choferes" {
+    oficina.asignarChoferes(melina, lucia)
+    assert.equals(melina, oficina.choferPrimeraOpcion())
+    assert.equals(lucia, oficina.choferSegundaOpcion())
+  }
+  
+  test "puede cambiar el primer chofer" {
+    oficina.cambiarPrimerChoferPor(roxana)
+    assert.equals(roxana, oficina.choferPrimeraOpcion())
+  }
+  
+  test "puede cambiar el segundo chofer" {
+    oficina.cambiarSegundoChoferPor(mariela)
+    assert.equals(mariela, oficina.choferSegundaOpcion())
+  }  
+  
+  test "puede intercambiar choferes" {
+    oficina.asignarChoferes(juana, gabriela)
+    oficina.intercambiarChoferes()
+    assert.equals(gabriela, oficina.choferPrimeraOpcion())
+    assert.equals(juana, oficina.choferSegundaOpcion())
+  }
+  
+  test "asigna a Juana en vez de a Roxana para un viaje de 10 kilómetros para Ana María" {
+    oficina.asignarChoferes(roxana, juana)
+    assert.equals(juana, oficina.choferElegidoParaViaje(anaMaria, 10))
+  }
+  
+  test "asigna a Roxana para un viaje de 10 kilómetros para Teresa, aunque su precio sea mayor" {
+    oficina.asignarChoferes(roxana, juana)
+    assert.equals(roxana, oficina.choferElegidoParaViaje(teresa, 10))
+  }
+  
+  test "asigna a Roxana para un viaje de 4 kilómetros para Teresa, porque su precio es menor" {
+    oficina.asignarChoferes(roxana, juana)
+    assert.equals(roxana, oficina.choferElegidoParaViaje(teresa, 4))
+  }
+}

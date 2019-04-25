@@ -1,0 +1,31 @@
+test "Mariela le cobra 180 a Ludmila por 10km" {
+  assert.equals(180, mariela.precioViaje(ludmila, 10))
+}
+
+test "Mariela le cobra 220 a Teresa por 10km" {
+  assert.equals(220, mariela.precioViaje(teresa, 10))
+}
+
+test "Mariela le cobra 50 a Ludmila por 2km" {
+  assert.equals(50, mariela.precioViaje(ludmila, 2))
+}
+
+test "Mariela le cobra 60 a Ana María por 2km" {
+  assert.equals(60, mariela.precioViaje(anaMaria, 2))
+}
+
+test "Juana le cobra 200 a Ludmila por 10km" {
+  assert.equals(200, juana.precioViaje(ludmila, 10))
+}
+
+test "Juana le cobra 200 a Teresa por 10km" {
+  assert.equals(200, juana.precioViaje(teresa, 10))
+}
+
+test "Juana le cobra 100 a Ludmila por 2km" {
+  assert.equals(100, juana.precioViaje(ludmila, 2))
+}
+
+test "Juana le cobra 100 a Ana María por 2km" {
+  assert.equals(100, juana.precioViaje(anaMaria, 2))
+}

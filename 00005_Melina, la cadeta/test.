@@ -1,0 +1,14 @@
+test "Trabajando para Ludmila, Melina pacta un precio de 15" {
+  melina.estaTrabajandoPara(ludmila)
+  assert.equals(15, melina.precioPactadoPorKm())
+}
+
+test "Trabajando para Ana María, Melina pacta un precio de 27" {
+  melina.estaTrabajandoPara(anaMaria)
+  assert.equals(27, melina.precioPactadoPorKm())
+}
+
+test "Trabajando para Teresa, Gabriela le cobra 45.6 a Melina por 2km" {
+  melina.estaTrabajandoPara(teresa)
+  assert.equals(45.6, gabriela.precioViaje(melina, 2))
+}

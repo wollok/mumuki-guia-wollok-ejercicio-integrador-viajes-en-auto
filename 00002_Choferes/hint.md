@@ -1,0 +1,1 @@
+Recordá que podés usar la **Consola** para probar tu solución. Ya incluimos por vos los objetos de las clientas que definiste en el ejercicio anterior. 
